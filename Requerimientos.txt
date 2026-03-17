@@ -1,0 +1,36 @@
+Requerimientos:
+1-
+	Funcionales:
+	-La biblioteca tiene que gestionar el alta, baja y modificación de libros, clientes y prestamos.
+	-Los clientes tienen que poder tomar prestados varios libros.
+	-El sistema debe poder generar un informe de libros prestados en cualquier momento que se le pida.
+	-Para registrar un nuevo libro a la biblioteca habrá que cargar título, autor, cantidad de páginas, editorial, isbn, si pertenece a una saga o no y la categoría en la que se encuentra (Infantiles, juveniles, adultos y conocimiento).
+	-Gestionar devolución de libros.
+	-Cuando hay devolución anticipada, dar 10 puntos al cliente.
+	
+	No funcionales:
+	-Ingreso de información de los clientes. (Organizacional:Diseño)
+	-Interfaz amigable a los usuarios. (Producto o Calidad: Usabilidad)
+	-Tiempo de respuesta de máximo 2 segundos para consultar la disponibilidad de un libro. (Producto o Calidad: Performance)
+	-Capacidad de 100000 libros y 10000 clientes. (Disponibilidad)
+	-Tener el copyright de los libros al día. (Externos: Legislativo)
+	
+2-
+	Funcionales:
+	-Registro de visitantes y asignación de pulsera.
+	-Registro y finalización de eventos.
+	-Compra de boletos.
+	-Recibimiento de notificaciones de eventos.
+	-Consulta de disponibilidad de atracciones.
+	-Reserva de boletos.
+	-Generación de informe sobre atracciones más visitadas.
+	-Agregar y eliminar atracción.
+	-Proporcionar mapa y guía.
+	-Dar cupón de descuento a cliente si completa una atracción en el tiempo estimado de espera.
+	
+	No funcionales:
+	-Interfaz intuitiva. (De producto o calidad: Usabilidad)
+	-Tiempo de respuesta para cargar información de atracciones menor o igual a 3 segundos. (De producto o calidad: Performance)
+	-El sistema debe poder manejar por lo menos 500000 visitantes simultáneos. (De producto o calidad: Disponibilidad)
+	-Especificar si la atracción es apta para todas las edades o si tiene restricciones de edad. (Externo: Regulatorio)
+	-Especificaciones de atributos. (Organizacional: Diseño)
