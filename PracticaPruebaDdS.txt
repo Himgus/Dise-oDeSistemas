@@ -1,0 +1,41 @@
+1-
+	Funcionales:
+	-Sistema debe contar con auditores, productores y consumidores.
+	-Se tiene que informar a los usuarios productores el alta o baja de una sustancia por mail.
+	-Compra/Venta de sustancias.
+	-Se tiene que saber el nombre, apellido, edad y fecha de alta de los usuarios.
+	-Para los productores y consumidores se necesita lo mismo que para los usuarios pero se tiene que guardar también la fecha de última renovación de datos.
+	-Renovación de datos cada 2 años en pdf con dni actualizado para personas físicas y dni actualizado de los gerentes para las personas jurídicas.
+	-Usuarios tienen que ingresar con CUIT/CUIL y contraseña.
+	-Manejo de diferencia entre sustancias simples y complejas.
+	-Se tiene que guardar el nombre, porcentaje de pureza de la y fórmula química de la solución y las sustancias simples se representan con un color característico.
+	-Los tramites tienen que detallar la fecha y hora del inicio del trámite, sustancia solicitada, cantidad solicitada, productor seleccionado, monto total a pagar y motivo de la solicitud.
+	-Proveedor puede aceptar o rechazar un tramite.
+	-Consumidor tiene que marcar el trámite como cerrado.
+	-Si el trámite es rechazado se tiene que especificar un motivo.
+	
+	No funcionales:
+	-Solicitudes pasan por un Buffer para controlar las entradas y salidas del servidor. (Organizacional: diseño)
+	
+3-
+	Funcionales:
+	-Permitir administrar pacientes, turnos, historiales y estudios.
+	-Sincronizar info entre sedes
+	-El sistema debera tener respaldo de la info clinica de los ultimos 10 años.
+	-El sistema debe permitir registro, manejo de turnos con distintas especialidades y consulta de resultados de estudios.
+	-Al momento del alta registrar nombre, apellido, dni, fecha de nacimiento, telefono, mail, obra social y numero de afiliado
+	-El sistema debe permitir tener varios turnos activos pero no debe permitir la reserva de 2 turnos a la misma hora.
+	-Permitir consultar agenda de medico, acceder el historial de pacientes, cargar diagnosticos, recetas y pedidos de estudios. Al hacerlo guardar fecha, hora y matricula del medico y linkear al paciente automaticamente.
+	-Permitir a recepcion registrar la llegada de un paciente, reasignar turnos y emitir un listado de turnos confirmados y ausentes.
+	
+	
+	No funcionales:
+	-Desarrollarse en Java y PostgreSQL y utilizar control de versiones Git. (Organizacional: de diseño)
+	-Respetar el estandar de la UI previamente creado (Producto: Usabilidad)
+	-El software debe poder ejecutarse en Windows y Linux (Organizacional: de diseño)
+	-El sistema debera estar disponible el 99.5% del tiempo (Producto: Disponibilidad)
+	-El sistema debe bloquear temporalmente el acceso a aquellos clientes que falten 3 veces consecutivas sin aviso.(Producto: Disponibilidad)
+	-La interfaz debe ser simple e inclusiva, que los clientes puedan reservar un turno en macimo 4 pasos.(Producto: Usabilidad)
+	-El tiempo de respuesta para buscar turnos debe ser <2 segundos de normal. (Producto: Performance)
+	-El sistema solo debe permitir el acceso a datos a profesionales y toda escritura de los datos debe quedar registrada para auditoría.(Producto: Seguridad:
+	-El sistema debe poder intercambiar info con el sistema nacional de recetas electronicas con una API externa.(Externos: Regulatorios)
