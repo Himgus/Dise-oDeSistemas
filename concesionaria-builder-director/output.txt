@@ -1,0 +1,12 @@
+===== CASOS CORRECTOS =====
+Autos registrados en Concesionaria Central:
+- Auto{marca='Ford', modelo='Fiesta', patente='AB123CD', color='Rojo', anioFabricacion=2020, cantidadPuertas=5, tipoCombustible=NAFTA, automatico=false, descapotable=false, kilometraje=45000}
+- Auto{marca='Toyota', modelo='Corolla', patente='AC456DF', color='Sin especificar', anioFabricacion=2022, cantidadPuertas=5, tipoCombustible=NAFTA, automatico=false, descapotable=false, kilometraje=0}
+- Auto{marca='Renault', modelo='Megane', patente='AD789GH', color='Gris', anioFabricacion=2018, cantidadPuertas=4, tipoCombustible=DIESEL, automatico=false, descapotable=false, kilometraje=90000}
+
+===== CASOS CON ERROR =====
+Patente inv?lida: La patente debe tener 6 o 7 caracteres
+A?o inv?lido: El a?o de fabricaci?n debe estar entre 2000 y 2026
+Marca vac?a: La marca es obligatoria
+Kilometraje negativo: El kilometraje no puede ser negativo
+Patente repetida: Ya existe un auto con la patente AB123CD
