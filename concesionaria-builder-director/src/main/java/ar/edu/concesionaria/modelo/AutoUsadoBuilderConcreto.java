@@ -100,6 +100,7 @@ public class AutoUsadoBuilderConcreto implements BuilderAuto{
         validarTextoObligatorio(auto.getModelo(), "El modelo es obligatorio");
         validarTextoObligatorio(auto.getPatente(), "La patente es obligatoria");
         validarPatenteLargo();
+        validarConformacionPatente();
         validarAnioFabricacion();
         validarPuertas();
         validarTipoCombustible();
@@ -134,6 +135,12 @@ public class AutoUsadoBuilderConcreto implements BuilderAuto{
     private void validarPatenteLargo() {
         if (auto.getPatente().length() < 6 || auto.getPatente().length() > 7) {
             throw new IllegalArgumentException("La patente debe tener 6 o 7 caracteres");
+        }
+    }
+
+    private void validarConformacionPatente(){
+        if(!auto.getPatente().matches("[A-Z0-9]+")){
+            throw new IllegalArgumentException("La patente esta conformada de caracteres invalidos");
         }
     }
 

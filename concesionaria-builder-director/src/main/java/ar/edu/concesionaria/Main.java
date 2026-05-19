@@ -123,6 +123,21 @@ public class Main {
                     .construir();
             concesionaria.agregarAuto(autoRepetido);
         });
+        probarCasoConError("Patente con caracteres invalidos", ()->{
+            Auto autoPatenteInvalida=usadoBuilder
+                    .marca("Volkswagen")
+                    .modelo("Up!")
+                    .patente("AAAAAAA")
+                    .color("Blanco")
+                    .anioFabricacion(1960)
+                    .cantidadPuertas(5)
+                    .tipoCombustible(TipoCombustible.NAFTA)
+                    .automatico(false)
+                    .descapotable(false)
+                    .kilometraje(200000)
+                    .construir();
+            concesionaria.agregarAuto(autoPatenteInvalida);
+        });
     }
 
     private static void probarCasoConError(String descripcion, Runnable caso) {
