@@ -84,6 +84,7 @@ public class Main {
                     .modelo("Cronos")
                     .patente("AE123IJ")
                     .anioFabricacion(1998)
+                    .kilometraje(1)
                     .construir();
             concesionaria.agregarAuto(autoInvalido);
         });
@@ -120,6 +121,7 @@ public class Main {
                     .modelo("Civic")
                     .patente("AB123CD")
                     .anioFabricacion(2021)
+                    .kilometraje(0)
                     .construir();
             concesionaria.agregarAuto(autoRepetido);
         });

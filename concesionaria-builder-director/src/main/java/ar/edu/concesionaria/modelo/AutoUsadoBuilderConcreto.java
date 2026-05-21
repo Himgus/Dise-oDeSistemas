@@ -139,7 +139,7 @@ public class AutoUsadoBuilderConcreto implements BuilderAuto{
     }
 
     private void validarConformacionPatente(){
-        if(!auto.getPatente().matches("[A-Z0-9]+")){
+        if(!auto.getPatente().matches("[A-Z]{2}[0-9]{3}[A-Z]{2}") && !auto.getPatente().matches("[A-Z]{3}[0-9]{3}")){
             throw new IllegalArgumentException("La patente esta conformada de caracteres invalidos");
         }
     }
